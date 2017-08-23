@@ -1,0 +1,97 @@
+@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  padding-top: 20px;
+  background-color: #e9eff3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 26px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.library-item {
+  min-height: 150px;
+}
+
+.page-footer {
+  padding: 20px;
+  color: darken($brand-primary, 50);
+  background-color: lighten(#3a3e47, 45);
+  border-top: 1px solid lighten($brand-primary, 30);
+}
+/* NavBar */
+
+.navbar-inverse {
+  background-color: #3a3e47;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+
+/* Buttons */
+.btn-success {
+  background-color: #479cd5;
+  border-color: #327eb1;
+}
+
+.btn-success:hover{
+  background-color: #327eb1;
+  border-color: #327eb1;
+}
+
+.btn-success:active:hover,
+.btn-success:active:focus,
+.btn-success:active.focus,
+.btn-success.active:hover,
+.btn-success.active:focus,
+.btn-success.active.focus,
+.open > .btn-success.dropdown-toggle:hover,
+.open > .btn-success.dropdown-toggle:focus,
+.open > .btn-success.dropdown-toggle.focus {
+    color: #fff;
+    background-color: #327eb1;
+    border-color: #327eb1;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  margin-bottom: 28em;
+}
+
+.jumbotron-billboard .img {
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color: #fff;
+    background: url("../../images/theatre.jpg") center center;
+    width: 100%;
+    height: 400%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;left:0;
+    z-index:1;
+}
+.jumbotron {position:relative;padding:50px;}
+.jumbotron .container {z-index:2;
+ position:relative;
+  z-index:2;
+}

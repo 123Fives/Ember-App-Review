@@ -1,0 +1,11 @@
+<h2></h2>
+<div class="row">
+  {{#each model as |movie|}}
+    <div class="col-md-4">
+      {{#movie-item item=movie}}
+        {{#link-to 'movies.edit' movie.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
+        <button class="btn btn-danger btn-xs" {{action 'deleteMovie' movie}}>Delete</button>
+      {{/movie-item}}
+    </div>
+  {{/each}}
+</div>

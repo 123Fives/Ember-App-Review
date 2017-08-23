@@ -1,0 +1,11 @@
+<h1>Top movies page</h1>
+
+
+<div class="well">
+  <ul class="nav nav-pills">
+    {{#link-to 'movies.index' tagName="li"}}<a href="">View All</a>{{/link-to}}
+    {{#link-to 'movies.new' tagName="li"}}<a href="">Add New</a>{{/link-to}}
+  </ul>
+</div>
+
+{{outlet}}
